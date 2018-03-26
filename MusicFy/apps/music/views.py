@@ -2,4 +2,4 @@ from django.shortcuts import render, HttpResponse, redirect
 
 # Create your views here.
 def index(request):
-    return HttpResponse("It is working")
+    return render(request,"music/homepage.html")
