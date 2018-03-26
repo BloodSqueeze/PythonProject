@@ -38,18 +38,18 @@ h2 {
     width: 100%;
     /*margin: 10px;*/
 }
-#top-bar img {
-    width: 200px;
-    margin-left: 150px;
-}
-#top-bar {
-    padding-top: 10px;
-    position: fixed;
-}
-#top-bar ul{
+
+.top ul{
     margin-right: 120px;
 }
-#top-bar a, #top-bar li{
+.top a, .top li{
 
     font-size: 18px;
+}
+.brand-logo img{
+    width: 200px;
+    margin: 10px 0 0 150px;
+}
+.top {
+    height: 80px;
 }
