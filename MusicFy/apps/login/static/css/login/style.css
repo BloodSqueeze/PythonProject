@@ -56,8 +56,17 @@ nav {
     height: 80px;
 }
 #devices img {
-    width: 300px;
+    width: 600px;
+    margin-left: 100px;
 }
 #iron_maiden img {
-    width: 400px;
+    width: 600px;
+    padding-left: 50px;
+    margin-left: 100px;
+}
+.section {
+    padding: 80px 0 80px 0;
+}
+.left_column {
+
 }
