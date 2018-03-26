@@ -38,7 +38,9 @@ h2 {
     width: 100%;
     /*margin: 10px;*/
 }
-
+nav {
+    position: fixed;
+}
 .top ul{
     margin-right: 120px;
 }
@@ -52,4 +54,10 @@ h2 {
 }
 .top {
     height: 80px;
+}
+#devices img {
+    width: 300px;
+}
+#iron_maiden img {
+    width: 400px;
 }
