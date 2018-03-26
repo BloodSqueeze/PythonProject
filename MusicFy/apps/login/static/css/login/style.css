@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    /*border: solid black 1px;*/
+    margin: 20;
+    border: solid black 1px;*/
 }
 body {
     width: 890px;
@@ -29,4 +29,7 @@ h2 {
 }
 .messages {
     color: red;
+}
+#top img {
+    width: 500px;
 }
