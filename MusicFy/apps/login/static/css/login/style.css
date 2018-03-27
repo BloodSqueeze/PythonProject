@@ -43,16 +43,18 @@ h2 {
 nav { /* keeps top nav fixed on the browser window when scrolling down*/
     position: fixed;
 }
-.top ul{
+.right ul{
     margin-right: 120px;
 }
 .top a, .top li{
 
     font-size: 18px;
 }
+
 .brand-logo img{
     width: 200px;
-    margin: 10px 0 0 150px;
+    height: 100px;
+    margin: 0 0 0 150px;
 }
 .top {
     height: 80px;
@@ -87,7 +89,7 @@ nav { /* keeps top nav fixed on the browser window when scrolling down*/
 nav {
     background-color: #00bb61;
     /*background-color: #00994f;*/
-    height: 80px;
+    height: 90px;
 }
 .left_column h2,.left_column h4,.left_column p,  h2, p{
     color: white;
