@@ -1,10 +1,11 @@
 * {
-    /*margin: 20;
-    border: solid black 1px;*/
+    /*margin: 20;*/
+    /*border: solid black 1px;*/
 }
+/*Login and Registration*/
 body {
-    width: 890px;
     margin: 0 auto;
+    background-color: #212121;
 }
 h1 {
     display: inline-block;
@@ -12,9 +13,19 @@ h1 {
 h2 {
     display: inline-block;
 }
-#register, #login {
+h5 {
+    color: #00964d;
+}
+.btn{
+    background-color: #00964d;
+}
+.btn:hover {
+    background-color: #00703a;
+}
+#register, #login, #top {
     width: 440px;
     display: inline-block;
+    margin-left: 35%;
 }
 #login {
     vertical-align: top;
@@ -22,6 +33,7 @@ h2 {
 #register h2, #login h2 {
     display: inline;
     margin: 0 0 0 150px;
+    color: #00964d;
 }
 #register h2 {
     display: inline;
@@ -30,9 +42,19 @@ h2 {
 .messages {
     color: red;
 }
+#register p {
+    color:white;
+}
+#register a {
+    color: #00964d;
+}
 #top img {
     width: 500px;
 }
+.sign_up {
+    margin-left: 150px; 
+}
+
 
 
 /* index */
