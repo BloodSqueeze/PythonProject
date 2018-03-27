@@ -33,12 +33,14 @@ h2 {
 #top img {
     width: 500px;
 }
+
+
 /* index */
 #index_body {
     width: 100%;
     /*margin: 10px;*/
 }
-nav {
+nav { /* keeps top nav fixed on the browser window when scrolling down*/
     position: fixed;
 }
 .top ul{
@@ -57,16 +59,40 @@ nav {
 }
 #devices img {
     width: 600px;
-    margin-left: 100px;
+
 }
 #iron_maiden img {
     width: 600px;
     padding-left: 50px;
-    margin-left: 100px;
+
 }
 .section {
     padding: 80px 0 80px 0;
 }
 .left_column {
-
+    margin: 20px 70px 20px 20px;
+    
+}
+.left_column p{
+    font-size: 19px;
+    
+}
+.left_column h4{
+    margin-top: 0px;
+    
+}
+.page-footer {
+    background-color: #00964d;
+}
+nav {
+    background-color: #00bb61;
+    /*background-color: #00994f;*/
+    height: 80px;
+}
+.left_column h2,.left_column h4,.left_column p,  h2, p{
+    color: white;
+}
+.col img{
+    width: 200px;
+    margin: 0;
 }
