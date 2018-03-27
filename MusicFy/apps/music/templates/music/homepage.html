@@ -13,72 +13,75 @@
     
 </head>
 <body>
-    <div id="top-bar">
-            <form action="">
-                <input type="text" name="search" id="search" value="Search">
-            </form>
-    </div>
-    <div id="main">
-        <div id="side-navigation">
-            <nav class="card-panel green accent-3">
-                YOUR LIBRARY:
-                <a href="">Recently Played</a>
-                <a href="">Songs</a>
-                <a href="">Albums</a>
-                <a href="">Artists</a>
-                <a href="">Stations</a>
-                <a href="">Local Files</a>
-                <a href="">Videos</a>
-                <a href="">Podcasts</a>
-
-                PLAYLISTS:
-                <a href="">User's Playlist Name</a>
-                <a href="">User's Playlist Name</a>
-                <a href="">User's Playlist Name</a>
-                <a href="">User's Playlist Name</a>
-            </nav>
+    <header>
+        <div class="row">
+            <div class="col l1">
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                          <a href="#name"><span>Jonathan |</span></a>
+                          <a href="#email"><span>jbarragan@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Your Music</a></li>
+        
+                    <li><div class="divider"></div></li>
+        
+                    <li><a class="subheader">YOUR LIBRARY:</a></li>
+                    <li><a class="waves-effect" href="#!">Recently Played</a></li>
+                    <li><a class="waves-effect" href="#!">Your Playlists</a></li>
+                    <li><a class="waves-effect" href="#!">Songs</a></li>
+                    <li><a class="waves-effect" href="#!">Albums</a></li>
+                    <li><a class="waves-effect" href="#!">Artists</a></li>
+                    <li><a class="waves-effect" href="#!">Stations</a></li>
+                    <li><a class="waves-effect" href="#!">Local Files</a></li>
+                    <li><a class="waves-effect" href="#!">Videos</a></li>
+                    <li><a class="waves-effect" href="#!">Podcasts</a></li>
+        
+                    <li><div class="divider"></div></li>
+                    
+                    <li><a class="subheader">PLAYLISTS</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
+            <div class="col l4">
 
-        <ul id="slide-out" class="sidenav">
-            <li>
-                <div class="user-view">
-                  <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                  <a href="#name"><span>Jonathan</span></a>
-                  <a href="#email"><span>jbarragan@gmail.com</span></a>
-                </div>
-            </li>
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Your Music</a></li>
+                    <form action="">
+                            <div class="input-field">
+                                <input id="search" name="search" type="text">
+                                <label for="search">Search</label>
+                            </div>
+                    </form>
 
-            <li><div class="divider"></div></li>
+            </div>
+            <div class="col l2 offset-l4 ">
+                <a href=""><img src="../../../login/static/images/MusicFy.png" alt="MusicFy_Logo"></a>
+            </div>
+        </div>
+    </header>
+    <main>
 
-            <li><a class="subheader">YOUR LIBRARY:</a></li>
-            <li><a class="waves-effect" href="#!">Recently Played</a></li>
-            <li><a class="waves-effect" href="#!">Your Playlists</a></li>
-            <li><a class="waves-effect" href="#!">Songs</a></li>
-            <li><a class="waves-effect" href="#!">Albums</a></li>
-            <li><a class="waves-effect" href="#!">Artists</a></li>
-            <li><a class="waves-effect" href="#!">Stations</a></li>
-            <li><a class="waves-effect" href="#!">Local Files</a></li>
-            <li><a class="waves-effect" href="#!">Videos</a></li>
-            <li><a class="waves-effect" href="#!">Podcasts</a></li>
-
-            <li><div class="divider"></div></li>
-            
-            <li><a class="subheader">PLAYLISTS</a></li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+       
 
         <div class="block">
-            <h3>Playlists</h3>
+            <h3>Top Playlists</h3>
             <blockquote>
                     This is an example quotation that uses the blockquote tag.
             </blockquote>
         </div>
         <div class="block">
-            <h3>Recommendations</h3>
+            <h3>Top Songs</h3>
+            <blockquote>
+                    This is an example quotation that uses the blockquote tag.
+            </blockquote>
         </div>
     </div>
+    </main>
+    <footer>
+
+    </footer>
     <script type="text/javascript" src="../../static/music/js/materialize.js"></script>
     <script type="text/javascript" src="../../static/music/js/javascript.js"></script>
 </body>

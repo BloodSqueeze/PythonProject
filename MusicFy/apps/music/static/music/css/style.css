@@ -4,3 +4,27 @@
 body {
     background-color: #212121;
 }
+.row{
+    background-color: #00964d;
+    height: 90px;
+    z-index: 1000;
+}
+ul {
+    background-color: ;
+}
+#slide-out {
+    background-color: #00964d;
+}
+#slide-out a {
+    color: white;
+}
+.material-icons {
+    font-size: 70px;
+    color: white;
+}
+#search {
+    color: white;
+}
+.col img {
+    width: 200px;
+} 
