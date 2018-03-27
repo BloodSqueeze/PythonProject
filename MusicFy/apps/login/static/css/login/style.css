@@ -7,12 +7,6 @@ body {
     margin: 0 auto;
     background-color: #212121;
 }
-h1 {
-    display: inline-block;
-}
-h2 {
-    display: inline-block;
-}
 h5 {
     color: #00964d;
 }
@@ -64,6 +58,8 @@ h5 {
 }
 nav { /* keeps top nav fixed on the browser window when scrolling down*/
     position: fixed;
+    /* z index allows the nav bar to stay on top of every other element when scrolling down*/
+    z-index: 1000;
     background-color: #00bb61;
     /*background-color: #00994f;*/
     height: 90px;
