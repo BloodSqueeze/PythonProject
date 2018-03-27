@@ -7,3 +7,8 @@ document.getElementsByTagName('head')[0].appendChild(script);
 $(document).ready(function(){
     $('.sidenav').sidenav();
   });
+
+  /* Carousel Image*/
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
