@@ -12,3 +12,17 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.carousel').carousel();
   });
+
+  /* audio Player*/
+  $(document).ready(function(){
+    $("#jquery_jplayer_1").jPlayer({
+     ready: function () {
+      $(this).jPlayer("setMedia", {
+       m4a: "/media/mysound.mp4",
+       oga: "/media/mysound.ogg"
+      });
+     },
+     swfPath: "/js",
+     supplied: "m4a, oga"
+    });
+   });
