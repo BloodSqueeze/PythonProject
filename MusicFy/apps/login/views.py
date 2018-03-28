@@ -6,7 +6,10 @@ import bcrypt
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'login/index.html')
+
+def registration_page(request):
+    return render(request, "login/registration.html")
 
 def registration(request):
     errors = User.objects.validate_user(request.POST)
@@ -30,6 +33,9 @@ def registration(request):
             id = request.session['id']
             return redirect('/{}'.format(id))
 
+def login_page(request):
+    return render(request, 'login/login.html')
+
 def login(request):
     username = request.POST['username']
     password = request.POST['password']
@@ -52,13 +58,7 @@ def login(request):
             return redirect('/')
 
 def loggedin(request):
-    if request.session.get('id') == None:
-        return redirect('/')
-    user = User.objects.get(id=request.session['id'])
-    context = {
-        'user': user
-    }
-    return render(request, 'loggedin.html', context)
+    return redirect("/music/")
 
 def logout(request):
     request.session.clear()
