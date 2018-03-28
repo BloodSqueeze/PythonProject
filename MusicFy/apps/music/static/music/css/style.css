@@ -3,7 +3,7 @@
 }
 /*HomePage*/
 body {
-    background-color: #212121;
+    background-color: black;
 }
 header{
     background-color: #00964d;
@@ -31,4 +31,8 @@ ul {
 } 
 h3 {
     color: white;
+}
+.carousel {
+    background-color: #212121;
+    border-radius: 25px;
 }

@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playlists - Spotify</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../../static/music/css/materialize.css "  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="../../static/music/css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
 </head>
 <body>
-    
+    <header>
+        <div class="row">
+            <div class="col l1">
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                          <a href="#name"><span>Name |</span></a>
+                          <a href="#email"><span>Username |</span></a>
+                          <br>
+                          <a href="#email"><span> Log Out</span></a>
+                        </div>
+                    </li>
+
+                    <li><div class="divider"></div></li>
+
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Browser</a></li>
+                    <li><a href="#!">Your Music</a></li>
+        
+                    <li><div class="divider"></div></li>
+        
+                    <li><a class="subheader">YOUR LIBRARY:</a></li>
+                    <li><a class="waves-effect" href="#!">Recently Played</a></li>
+                    <li><a class="waves-effect" href="#!">Your Playlists</a></li>
+                    <li><a class="waves-effect" href="#!">Songs</a></li>
+                    <li><a class="waves-effect" href="#!">Albums</a></li>
+                    <li><a class="waves-effect" href="#!">Artists</a></li>
+                    <li><a class="waves-effect" href="#!">Local Files</a></li>
+                    <li><a class="waves-effect" href="#!">Videos</a></li>
+                    <li><a class="waves-effect" href="#!">Podcasts</a></li>
+        
+                    <li><div class="divider"></div></li>
+                    
+                    <li><a class="subheader">PLAYLISTS</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+            <div class="col l4">
+
+                    <form action="">
+                            <div class="input-field">
+                                <input id="search" name="search" type="text">
+                                <label for="search">Search</label>
+                            </div>
+                    </form>
+
+            </div>
+            <div class="col l2 offset-l4 ">
+                <a href=""><img src="../../../login/static/images/MusicFy.png" alt="MusicFy_Logo"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 style="color:white">Playlists</h1>
+        <div class="row">
+            <div class="col l1 s12"></div>
+            <div class="col l5 s12">
+                <h3>Top Artists</h3>
+
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                    </div>
+                </div>
+                <div class="col l5 s12">
+                <h3>Top Songs</h3>
+
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col l1 s12"></div>
+                <div class="col l5 s12">
+                <h3>Top Playlists</h3>
+
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                    </div>
+
+                </div>
+                <div class="col l5 s12">
+                    <h3>Top Albums</h3>
+        
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                        </div>
+        
+                </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="../../static/music/js/materialize.js"></script>
+    <script type="text/javascript" src="../../static/music/js/javascript.js"></script>
 </body>
 </html>
