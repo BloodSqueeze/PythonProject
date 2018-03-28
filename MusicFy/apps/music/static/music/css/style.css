@@ -48,6 +48,11 @@ h3 a {
 h3 a:hover {
     color: #00bb61;
 }
+/* Accordion*/
+.collapsible-header {
+    color: white;
+    background-color: #212121;
+}
 /* Search Table */
 th, td {
     color: white;

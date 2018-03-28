@@ -13,3 +13,12 @@ $(document).ready(function(){
     $('.carousel').carousel();
   });
 
+/*Accordion*/
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
+    
+      
+
+            
