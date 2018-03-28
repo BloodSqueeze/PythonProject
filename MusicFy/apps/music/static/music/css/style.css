@@ -6,7 +6,7 @@ body {
     background-color: black;
 }
 header{
-    background-color: #00964d;
+    background-color: #00bb61;
     height: 90px;
     z-index: 1000;
 }
@@ -14,13 +14,19 @@ ul {
     background-color: ;
 }
 #slide-out {
-    background-color: #00964d;
+    background-color: #00bb61;
 }
 #slide-out a {
     color: white;
 }
 .material-icons {
     font-size: 70px;
+    color: white;
+}
+.input-field label {
+    color: white;
+}
+.tabs .indicator {
     color: white;
 }
 #search {
@@ -33,6 +39,6 @@ h3 {
     color: white;
 }
 .carousel {
-    background-color: #212121;
-    border-radius: 25px;
+    /*background-color: #212121;
+    border-radius: 25px;*/
 }
