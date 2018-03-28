@@ -48,3 +48,10 @@ h3 a {
 h3 a:hover {
     color: #00bb61;
 }
+/* Search Table */
+th, td {
+    color: white;
+}
+.left-align {
+    color: #00bb61;
+}
