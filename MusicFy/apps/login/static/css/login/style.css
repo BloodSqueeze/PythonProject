@@ -83,7 +83,15 @@ nav { /* keeps top nav fixed on the browser window when scrolling down*/
     width: 600px;
 
 }
-
+.carousel {
+    height: 420px;
+    padding-bottom: 20px;
+}
+/* adjust height width of carousel*/
+.carousel .carousel-item {
+    width:300px !important;
+    height: 100px;
+}
 .section {
     padding: 80px 0 80px 0;
 }
@@ -92,7 +100,7 @@ nav { /* keeps top nav fixed on the browser window when scrolling down*/
     
 }
 .left_column p{
-    font-size: 19px;
+    font-size: 15px;
     
 }
 .left_column h4{
