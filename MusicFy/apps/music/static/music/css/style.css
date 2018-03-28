@@ -53,6 +53,16 @@ h3 a:hover {
     color: white;
     background-color: #212121;
 }
+.collapsible-body a{
+    color: white;
+}
+.collapsible-body a:hover{
+    color: #00bb61;
+}
+.collapsible-body th{
+    color: #00bb61;
+    font-size: 30px;
+}
 /* Search Table */
 th, td {
     color: white;
