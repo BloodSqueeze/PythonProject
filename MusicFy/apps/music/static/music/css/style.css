@@ -10,6 +10,12 @@ header{
     height: 90px;
     z-index: 1000;
 }
+.material-icons {
+    margin-top: 15px;
+}
+form {
+    margin-top: 25px;
+}
 ul {
     background-color: ;
 }
