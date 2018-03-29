@@ -65,7 +65,7 @@ nav { /* keeps top nav fixed on the browser window when scrolling down*/
     height: 90px;
 }
 .top {
-    margin-right: 120px;
+    margin:15px 120px 0 0;
 }
 .top a{
     font-size: 18px;
@@ -75,6 +75,11 @@ nav { /* keeps top nav fixed on the browser window when scrolling down*/
     width: 200px;
     height: 100px;
     margin: 0 0 0 150px;
+}
+.col .brand-logo img {
+    margin: 0;
+    width: 200px;
+    height: 100px;
 }
 .top {
     height: 80px;
