@@ -9,20 +9,26 @@ class UserManager(models.Manager):
     def validate_user(request, postData):
         errors = {}
 
-        #validating name 
-        if len(postData['name']) < 3 or postData['name'].isalpha():
-            if len(postData['name']) < 3:
+        #validating first_name 
+        if len(postData['first_name']) < 3 or postData['first_name'].isalpha():
+            if len(postData['first_name']) < 3:
                 errors['name'] = "Name must contain more than 3 characters."
-            if not postData['name'].isalpha():
+            if not postData['first_name'].isalpha():
+                errors['name_alpha'] = "Name must contain only characters."
+        #validating last_name
+        if len(postData['last_name']) < 3 or postData['last_name'].isalpha():
+            if len(postData['last_name']) < 3:
+                errors['name'] = "Name must contain more than 3 characters."
+            if not postData['last_name'].isalpha():
                 errors['name_alpha'] = "Name must contain only characters."
 
         #validating username 
-        if len(postData['username']) < 3 or postData['username'].isalpha():
-            if len(postData['username']) < 3:
+        if len(postData['email']) < 3 or postData['email'].isalpha():
+            if len(postData['email']) < 3:
                 errors['username'] = "Username must contain more than 3 characters."
-            if not postData['username'].isalpha():
+            if not postData['email'].isalpha():
                 errors['username_alpha'] = "Username must contain only characters."
-        if User.objects.filter(username=postData['username']):
+        if User.objects.filter(email=postData['email']):
             errors['username'] = "This username already exists."
 
         #validating email
@@ -46,8 +52,8 @@ class User(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
-    birthday = models.DateTimeField(auto_now=False, auto_now_add=False )
-    gender =  models.CharField(max_length=255)
+    #birthday = models.DateTimeField(auto_now=False, auto_now_add=False )
+    #gender =  models.CharField(max_length=255)
     password =  models.CharField(max_length=255)
 
     objects = UserManager()

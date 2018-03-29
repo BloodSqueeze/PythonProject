@@ -24,6 +24,7 @@
             <h5>Sign Up With Your Email Address</h5>
             <br>
             <form action="/registration" method="post">
+                {% csrf_token %}
 
             <div class="input-field">
                 <input id="first_name" name="first_name" type="text" class="validate">

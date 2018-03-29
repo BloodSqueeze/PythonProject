@@ -20,27 +20,27 @@ def registration(request):
         return redirect('/')
     
     else:
-            name = request.POST['name']
-            username = request.POST['username']
+            first_name = request.POST['first_name']
+            last_name = request.POST['last_name']
             email = request.POST['email']
             password = request.POST['password']
             hashed_pw = bcrypt.hashpw(password.encode(), bcrypt.gensalt())
 
-            User.objects.create(name=name, username=username, email=email, password=hashed_pw)
-            user = User.objects.get(username=username)
+            User.objects.create(first_name=first_name, last_name=last_name, email=email, password=hashed_pw)
+            user = User.objects.get(email=email)
             request.session['id'] = user.id
             messages.success(request, 'Successfully Registered')
             id = request.session['id']
-            return redirect('/{}'.format(id))
+            return redirect('/music/{}'.format(id))
 
 def login_page(request):
     return render(request, 'login/login.html')
 
 def login(request):
-    username = request.POST['username']
+    email = request.POST['email']
     password = request.POST['password']
 
-    user = User.objects.filter(username=username)
+    user = User.objects.filter(email=email)
 
     if len(user) < 1:
         messages.error(request, "User does not exists")
@@ -52,7 +52,7 @@ def login(request):
             request.session['id'] = user[0].id
             messages.success(request, 'Successfully Logged In')
             id = request.session['id']
-            return redirect('/{}'.format(id))
+            return redirect('/music/{}'.format(id))
         else:
             messages.error(request, "Incorrect username/password combination.")
             return redirect('/')
